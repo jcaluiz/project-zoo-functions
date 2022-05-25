@@ -2,9 +2,8 @@ const handlerElephants = require('../src/handlerElephants');
 
 describe('Testes da função HandlerElephants', () => {
   it('retorna a quantidade de elefantes', () => {
-    const expected = parseInt(4, 10);
-    const actual = handlerElephants('residents').length;
-    expect(actual).toEqual(expected);
+    const actual = handlerElephants('count');
+    expect(actual).toEqual(4);
   });
   it('retorna um array com a relação dos nomes de todos os elefantes', () => {
     const actual = handlerElephants('names');
